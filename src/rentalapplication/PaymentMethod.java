@@ -10,8 +10,8 @@ abstract class PaymentMethod {
     public String getDetails() {
         return details;
     }
-    
-   @Override
+
+    @Override
     public String toString() {
         return getClass().getSimpleName();
     }

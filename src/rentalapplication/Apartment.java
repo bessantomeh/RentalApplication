@@ -1,9 +1,9 @@
 package rentalapplication;
 
- class Apartment extends Building{
+class Apartment extends Building {
     private int floorNumber;
-    
-    public Apartment(String address, String name, double size, int floorNumber) {
+
+    public Apartment(Address address, String name, double size, int floorNumber) {
         super(address, name, size);
         this.floorNumber = floorNumber;
     }
@@ -11,9 +11,9 @@ package rentalapplication;
     public int getFloorNumber() {
         return floorNumber;
     }
-    
-   @Override
+
+    @Override
     public String toString() {
-        return super.toString() + " , NumberOfFloor: " + floorNumber;
+        return super.toString() + ", Floor Number: " + floorNumber;
     }
 }

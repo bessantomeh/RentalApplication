@@ -1,24 +1,25 @@
 package rentalapplication;
+
 import java.util.ArrayList;
 import java.util.List;
 
 class Customer {
     private String name;
-    private String CustomerInfo;
+    private String contactInfo;
     private List<Building> rentedBuildings;
-    
-     public Customer(String name, String CustomerInfo) {
+
+    public Customer(String name, String contactInfo) {
         this.name = name;
-        this.CustomerInfo = CustomerInfo;
+        this.contactInfo = contactInfo;
         this.rentedBuildings = new ArrayList<>();
     }
-     
+
     public String getName() {
         return name;
     }
 
     public String getContactInfo() {
-        return CustomerInfo;
+        return contactInfo;
     }
 
     public void rentBuilding(Building building) {
@@ -28,9 +29,9 @@ class Customer {
     public List<Building> getRentedBuildings() {
         return rentedBuildings;
     }
-    
+
     @Override
     public String toString() {
-        return name + " (" + CustomerInfo + ")";
+        return name + " (" + contactInfo + ")";
     }
 }
